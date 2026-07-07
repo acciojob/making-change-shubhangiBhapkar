@@ -10,10 +10,10 @@ const q = Math.floor(amount / 25);
   amount %= 5;
 
   const p = amount;
-
-  return { q, d, n, p };
+	let str = `"q":${q}, "d":${d}, "n":${n}, "p":${p}`;
+  return str;
 };
 
 // Do not the change the code below
-const c = prompt("Enter c: ");
+//const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
