@@ -1,5 +1,6 @@
 const makeChange = (c) => {
   // your name here
+let amount = c;
 const q = Math.floor(amount / 25);
   amount %= 25;
 
@@ -10,7 +11,7 @@ const q = Math.floor(amount / 25);
   amount %= 5;
 
   const p = amount;
-	let str = `"q":${q}, "d":${d}, "n":${n}, "p":${p}`;
+	let str = `{"q:"${q}, "d:"${d}, "n:"${n}, "p:"${p}}`;
   return str;
 };
 
