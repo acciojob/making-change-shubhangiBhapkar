@@ -11,8 +11,14 @@ const q = Math.floor(amount / 25);
   amount %= 5;
 
   const p = amount;
-	let str = `{"q:"${q}, "d:"${d}, "n:"${n}, "p:"${p}}`;
-  return str;
+	// let str = `{"q:"${q}, "d:"${d}, "n:"${n}, "p:"${p}}`;
+	const obj = {
+		q,
+		d,
+		n,
+		p
+	}
+  return obj;
 };
 
 // Do not the change the code below
